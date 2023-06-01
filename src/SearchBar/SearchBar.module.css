@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  padding: 5px;
+  text-align: center;
+  border: none;
+}
+
+.searchInput:focus {
+  border: none;
+}
+
+.searchButton {
+  color: white;
+  background-color: rebeccapurple;
+  width: 100px;
+  padding: 2px 0;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.searchButton:hover {
+  background-color: rgb(193, 154, 229);
+}
