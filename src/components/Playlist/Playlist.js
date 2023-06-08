@@ -33,13 +33,13 @@ function Playlist({ addedSong, onRemove, onSubmit }) {
       <li key={index} className={styles.playlistSongContainer}>
 
         <span className={styles.pictureContainer}>
-          <img src={song.artist.picture} className={styles.picture} />
+          <img src={song.artist.picture} className={styles.picture} alt={song.title} />
         </span>
 
         <span className={styles.infContainer}>
 
           <span className={styles.songName}>
-            <a className={styles.songLink} href={song.link} target='_blank'>
+            <a className={styles.songLink} href={song.link} target='_blank' rel="noreferrer" >
               {song.title}
             </a>
           </span>
