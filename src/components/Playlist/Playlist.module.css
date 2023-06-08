@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.playlist {
+  background-color: rgba(42, 3, 101, 0.69);
+  width: 350px;
+  min-height: 400px;
+  max-height: 50vh;
+  overflow: auto;
+  padding: 15px;
+}
+
+.listName {
+  margin-bottom: 10px;
+  min-width: 100%;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid gray;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+ul {
+  color: white;
+}
+
+.playlistSongContainer {
+  border-bottom: 1px solid gray;
+  padding: 7px;
+  position: relative;
+  list-style: none;
+  display: grid;
+  grid-template-areas: 
+    'pictureContainer infContainer plusSymbol';
+  grid-template-columns: minmax(40px, 40px) 1fr minmax(5px, 5px);
+  gap: 5px;
+}
+
+.infcontainer {
+  grid-area: infContainer;
+}
+
+.songLink {
+  color: beige;
+  text-decoration: underline;
+}
+
+.songLink:hover {
+  text-decoration: none;
+}
+
+.songName {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.songDuration {
+  margin: 0 5px;
+}
+
+.additionalInf {
+  color: gray;
+  font-size: 14px;
+}
+
+.pictureContainer {
+  grid-area: pictureContainer;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pictureContainer .picture {
+  max-width: 100%;
+  height: auto;
+  background-image: cover;
+}
+
+.minusSymbol {
+  grid-area: plusSymbol;
+  align-self: center;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.minusSymbol:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.saveToSpotify {
+  color: white;
+  background-color: rebeccapurple;
+  width: 130px;
+  padding: 5px 0;
+  border-radius: 10px;
+  position: sticky;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  margin: 10px 0;
+}
+
+.saveToSpotify:hover {
+  background-color: rgb(193, 154, 229);
+  cursor: pointer;
+}

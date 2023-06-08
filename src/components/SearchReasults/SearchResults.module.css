@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.searchResults {
+  background-color: rgba(42, 3, 101, 0.69);
+  width: 350px;
+  min-height: 400px;
+  max-height: 50vh;
+  overflow: auto;
+  padding: 15px;
+}
+
+ul {
+  color: white;
+}
+
+.resultsSongContainer {
+  border-bottom: 1px solid gray;
+  padding: 7px;
+  position: relative;
+  list-style: none;
+  display: grid;
+  grid-template-areas: 
+    'pictureContainer infContainer plusSymbol';
+  grid-template-columns: minmax(40px, 40px) 1fr minmax(5px, 5px);
+  gap: 5px;
+}
+
+.infcontainer {
+  grid-area: infContainer;
+}
+
+.songLink {
+  color: beige;
+  text-decoration: underline;
+}
+
+.songLink:hover {
+  text-decoration: none;
+}
+
+.songName {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.songDuration {
+  margin: 0 5px;
+}
+
+.additionalInf {
+  color: gray;
+  font-size: 14px;
+}
+
+.pictureContainer {
+  grid-area: pictureContainer;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.pictureContainer .picture {
+  max-width: 100%;
+  height: auto;
+  background-image: cover;
+}
+
+.plusSymbol {
+  grid-area: plusSymbol;
+  align-self: center;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.plusSymbol:hover {
+  color: gray;
+  cursor: pointer;
+}

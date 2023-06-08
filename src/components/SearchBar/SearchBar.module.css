@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.searchBar {
+  display: grid;
+  grid-template-areas:
+    'inputSearch'
+    'submitSearch'
+  ;
+  justify-content: center;
+}
+
+#inputSearch {
+  grid-area: inputSearch;
+  padding: 5px;
+  text-align: center;
+  border: none;
+}
+
+#inputSearch:focus {
+  border: none;
+}
+
+#submitSearch {
+  grid-area: submitSearch;
+  color: white;
+  background-color: rebeccapurple;
+  width: 100px;
+  padding: 5px 0;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 10px 0;
+}
+
+#submitSearch:hover {
+  background-color: rgb(193, 154, 229);
+  cursor: pointer;
+}
