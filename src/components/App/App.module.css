@@ -28,13 +28,14 @@
       'searchResults'
       'playlist';
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 70px 1fr 1fr;
+    grid-template-rows: 50px 80px 1fr 1fr;
     height: 150vh;
   }
 }
 
 .header {
   grid-area: header;
+  align-self: start;
 }
 
 .searchBar {

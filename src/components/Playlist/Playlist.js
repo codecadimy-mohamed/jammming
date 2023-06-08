@@ -77,7 +77,7 @@ function Playlist({ addedSong, onRemove, onSubmit }) {
         <input
           type="submit"
           name="savePlalylist"
-          value="SAVE TO SPOTIFY"
+          value="SAVE TO Deezer"
           className={styles.saveToSpotify}
         />
       </form>
