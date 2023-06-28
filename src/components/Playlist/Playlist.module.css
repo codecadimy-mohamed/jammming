@@ -6,7 +6,7 @@
 
 .playlist {
   background-color: rgba(42, 3, 101, 0.69);
-  width: 350px;
+  width: 80%;
   min-height: 300px;
   max-height: calc((150vh - (50px + 80px)) / 2);
   overflow: auto;
@@ -34,7 +34,7 @@ ul {
   position: relative;
   list-style: none;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     'pictureContainer infContainer plusSymbol';
   grid-template-columns: minmax(40px, 40px) 1fr minmax(5px, 5px);
   gap: 5px;
